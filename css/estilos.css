@@ -10,22 +10,23 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../img/fondo_negro.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
+/*inicio header*/
 header{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     margin: auto;
     text-transform: uppercase;
 }
 header h1{
     flex: 50%;
-    width: 100vw;
+    width: 100%;
     font-family: 'Michroma', sans-serif;
-    font-size: 60px;
+    font-size: 48px;
     text-align: center;
     margin: 10px;
 }
@@ -37,18 +38,31 @@ header h1 a{
 header h1 a span{
     color: yellow;
 }
-@media (max-width:570px) {
+@media (max-width:721px) {
     header h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
+@media (max-width:570px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+@media (max-width:440px) {
+    header h1 {
+        font-size: 22px;
+    }
+}
+/*fin header*/
 
-/*inicio NAV*/
+
+
+/*INICIO NAV*/  
 nav {
     display: flex;
     background: black;
-    height: 80px;
-    width: 100vw;
+    height: 60px;
+    width: 100%;
     text-align: center;  
     justify-content: center;
 }
@@ -58,12 +72,12 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    line-height: 80px;
+    line-height: 60px;
     margin: 0 5px;
 }
 nav ul li a {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -72,57 +86,74 @@ nav ul li a {
 li a:hover {
     background: yellow;
     color: black;
-    transition: .5s;
+    transition: .7s;
 }
 .checkbtn {
     font-size: 30px;
     color: #fff;
     justify-content: center;
-    line-height: 80px;
+    line-height: 60px;
     cursor: pointer;
     display: none;
 }
 #check {
     display: none;
 }
-@media (max-width: 952px){
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px){
+@media (max-width: 721px){
     .checkbtn{
         display: block;
     }
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
+        height: 100%;
+        background: #242323f1;
+        top: 120px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all .7s;
     }
     nav ul li{
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 40px 0;
+        line-height: 5px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 18px;
     }
     li a:hover, li a.active{
         background: none;
-        color: red;
+        color: yellow;
     }
     #check:checked ~ ul{
         left:0;
     }
 }
-/*fin NAV*/
+@media (max-width: 921px) and (min-width: 722px){
+    ul{
+        top: 151px;
+    }
+}
+@media (max-width: 721px) and (min-width: 571px){
+    ul{
+        top: 128px;
+    }
+}
+@media (max-width: 570px) and (min-width: 441px){
+    ul{
+        top: 119px;
+    }
+}
+@media (max-width: 440px) and (min-width: 275px){
+    ul{
+        top: 112px;
+    }
+}
+/*FIN NAV*/
 
 
+
+/*INICIO HOME TEXTO1*/
 #texto1{
     display: flex;
     flex-wrap: wrap;
@@ -141,7 +172,7 @@ li a:hover {
     text-align: center;
     margin: 20px 35px;
     color: yellow;
-    font-size: 30px;
+    font-size: 26px;
     font-style: oblique;
 }
 #texto1 p{
@@ -149,20 +180,105 @@ li a:hover {
     font-size: 16px;
     text-align: justify;
 }
-@media (max-width: 450px){
+@media (max-width: 720px){
     #texto1{
-        margin-top: 40px;
+        margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
     #texto1 h2{
-        font-size: 22px;
+        font-size: 20px;
+        width: 100%;
+        margin: 15px 15px;
+    }
+    #texto1 p{
+        font-size: 14px;
+        margin: 15px 15px;
+    }
+}
+@media (max-width: 450px){
+    #texto1{
+        margin-top: 10px;
+        word-spacing: 0.5vw;
+        line-height: 1.4;
+    }
+    #texto1 h2{
+        font-size: 18px;
+        width: 100%;
+        margin: 15px 15px;
     }
     #texto1 p{
         font-size: 13px;
+        margin: 15px 15px;
     }
 }
+/*FIN HOME TEXTO1*/
 
+
+/*INICIO HOME BOX*/
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: rgba(33, 30, 30, 0.274);
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    word-spacing: 0.3vw;
+    line-height: 1.5;
+    
+}
+.box h2{
+    width: 100%;
+    text-align: center;
+    margin: 20px 35px;
+    color: yellow;
+    font-size: 26px;
+    font-style: oblique;
+}
+.box p{
+    margin: 15px 35px;
+    font-size: 16px;
+    text-align: justify;
+}
+@media (max-width: 720px){
+    .box{
+        margin-top: 10px;
+        word-spacing: 0.5vw;
+        line-height: 1.4;
+    }
+    .box h2{
+        font-size: 20px;
+        width: 100%;
+        margin: 15px 15px;
+    }
+    .box p{
+        font-size: 14px;
+        margin: 15px 15px;
+    }
+}
+@media (max-width: 450px){
+    .box {
+        margin-top: 10px;
+        word-spacing: 0.5vw;
+        line-height: 1.4;
+    }
+    .box h2{
+        font-size: 18px;
+        width: 100%;
+        margin: 15px 15px;
+    }
+    .box p{
+        font-size: 13px;
+        margin: 15px 15px;
+    }
+}
+/*FIN HOME BOX*/
+
+
+/*INICIO HOME TEXTO2*/
 #texto2{
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +297,7 @@ li a:hover {
     text-align: center;
     margin: 20px 35px;
     color: yellow;
-    font-size: 30px;
+    font-size: 26px;
     font-style: oblique;
 }
 #texto2 p{
@@ -189,19 +305,40 @@ li a:hover {
     font-size: 16px;
     text-align: justify;
 }
-@media (max-width: 450px){
+@media (max-width: 720px){
     #texto2{
-        margin-top: 40px;
+        margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
     #texto2 h2{
-        font-size: 22px;
+        font-size: 20px;
+        width: 100%;
+        margin: 15px 15px;
+    }
+    #texto2 p{
+        font-size: 14px;
+        margin: 15px 15px;
+    }
+}
+@media (max-width: 450px){
+    #texto2 {
+        margin-top: 10px;
+        word-spacing: 0.5vw;
+        line-height: 1.4;
+    }
+    #texto2 h2{
+        font-size: 18px;
+        width: 100%;
+        margin: 15px 15px;
     }
     #texto2 p{
         font-size: 13px;
+        margin: 15px 15px;
     }
 }
+/*FIN HOME TEXTO2*/
+
 
 #texto3{
     background-color: none;
@@ -267,7 +404,7 @@ li a:hover {
     font-style: normal;
     margin-bottom: 25px;
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 721px){
     #textoFooter{
         width: 95%;
         background-color: rgba(0, 0, 0, 0.144);
@@ -393,55 +530,12 @@ li a:hover {
 }
 @media (min-width:320px) {
     .magsafe {
-        min-width: 200px;
+        min-width: 100px;
         margin: auto;  
     }
 }
 /*FIN HOME MAGSAFE*/
 
-
-/*inicio HOME BOX*/
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    background-color: rgba(33, 30, 30, 0.274);
-    width: 90%;
-    margin: auto;
-    margin-top: 60px;
-    border-radius: 15px;
-    text-transform: uppercase;
-    word-spacing: 0.3vw;
-    line-height: 1.5;
-    
-}
-.box h2{
-    width: 100%;
-    text-align: center;
-    margin: 20px 35px;
-    color: yellow;
-    font-size: 30px;
-    font-style: oblique;
-}
-.box p{
-    margin: 15px 35px;
-    font-size: 16px;
-    text-align: justify;
-}
-@media (max-width: 450px){
-    .box{
-        margin-top: 40px;
-        word-spacing: 0.5vw;
-        line-height: 1.4;
-    }
-    .box h2{
-        font-size: 22px;
-    }
-    .box p{
-        font-size: 13px;
-    }
-}
-/*FIN HOME BOX*/
 
 
 /*INICIO CONTACTO-CONTACTO*/
@@ -549,6 +643,7 @@ li a:hover {
 /*FIN GALERIA*/
 
 
+/*INICIO RELLENO*/
 .relleno{
     display: flex;
     flex-wrap: wrap;
@@ -578,19 +673,42 @@ li a:hover {
     font-size: 16px;
     text-align: justify;
 }
-@media (max-width: 360px){
-    #relleno{
-        margin-top: 40px;
+@media (max-width: 720px){
+    .relleno{
+        margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    #relleno h2{
-        font-size: 12px;
+    .relleno h2{
+        font-size: 20px;
+        width: 100%;
+        margin: 15px 15px;
     }
-    #relleno p{
-        font-size: 10px;
+    .relleno p{
+        font-size: 14px;
+        margin: 15px 15px;
     }
 }
+@media (max-width: 450px){
+    .relleno {
+        margin-top: 10px;
+        word-spacing: 0.5vw;
+        line-height: 1.4;
+    }
+    .relleno h2{
+        font-size: 18px;
+        width: 100%;
+        margin: 15px 15px;
+        margin-bottom: 5px;
+    }
+    .relleno p{
+        font-size: 13px;
+        margin: 15px 15px;
+        margin-top: 5px;
+    }
+}
+/*FIN RELLENO*/
+
 
 
 /*INICIO FOOTER*/
@@ -599,7 +717,7 @@ li a:hover {
     flex-wrap: wrap;
     margin: auto;
     margin-top: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -617,9 +735,8 @@ li a:hover {
     flex-wrap: wrap;
     font-size: 35px;
     margin: 20px 30px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-family: 'Michroma', sans-serif;
-    
 }
 .box1 h2 span {
     color: yellow;
@@ -627,10 +744,12 @@ li a:hover {
 .box1 p {
     margin: 20px 30px;
 }
-.box1 u {
+.box1 p span{
     color: yellow;
-    margin: 20px 30px;;
+    margin: 20px 10px;
+    font-style: oblique;
 }
+
 
 .box2{
     flex: 50%;
@@ -662,18 +781,43 @@ li a:hover {
 }
 .box2 p{
     margin: 20px 30px;
+    text-transform: none;
 }
-@media (max-width: 525px){
+.box2 p span{
+    text-decoration-line: underline;
+}
+.box2 p span:hover {
+    color: yellow;
+}
+@media (max-width: 577px){
+    .box1{
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .box1 h2 {
+        font-size: 22px;
+        width: 80%;
+        margin:auto;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .box1 p {
+        font-size: 13px;
+    }
+    .box1 u {
+        font-size: 13px;
+    }
     .box2{
         flex: 100%;
         width: 100%;
         font-size: 13px;
-        text-align: left;
+        text-align: center;
     }
     .box2 h2{
         font-family: 'Michroma', sans-serif;
         font-size: 15px;
-        text-align: left;
+        text-align: center;
         margin: 40px 30px 10px 30px;
         
     }
