@@ -20,6 +20,7 @@ header{
     width: 100%;
     background-color: black;
     margin: auto;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 header h1{
@@ -111,7 +112,7 @@ li a:hover {
         top: 120px;
         left: -100%;
         text-align: center;
-        transition: all .7s;
+        transition: all .9s;
     }
     nav ul li{
         display: block;
@@ -126,7 +127,7 @@ li a:hover {
         color: yellow;
     }
     #check:checked ~ ul{
-        left:0;
+        left: 0;
     }
 }
 @media (max-width: 921px) and (min-width: 722px){
@@ -154,7 +155,7 @@ li a:hover {
 
 
 /*INICIO HOME TEXTO1*/
-#texto1{
+#home1{
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -167,7 +168,7 @@ li a:hover {
     word-spacing: 0.3vw;
     line-height: 1.5;
 }
-#texto1 h2{
+#home1 h2{
     width: 100%;
     text-align: center;
     margin: 20px 35px;
@@ -175,39 +176,39 @@ li a:hover {
     font-size: 26px;
     font-style: oblique;
 }
-#texto1 p{
+#home1 p{
     margin: 15px 35px;
     font-size: 16px;
     text-align: justify;
 }
 @media (max-width: 720px){
-    #texto1{
+    #home1{
         margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    #texto1 h2{
+    #home1 h2{
         font-size: 20px;
         width: 100%;
         margin: 15px 15px;
     }
-    #texto1 p{
+    #home1 p{
         font-size: 14px;
         margin: 15px 15px;
     }
 }
 @media (max-width: 450px){
-    #texto1{
+    #home1{
         margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    #texto1 h2{
+    #home1 h2{
         font-size: 18px;
         width: 100%;
         margin: 15px 15px;
     }
-    #texto1 p{
+    #home1 p{
         font-size: 13px;
         margin: 15px 15px;
     }
@@ -215,8 +216,8 @@ li a:hover {
 /*FIN HOME TEXTO1*/
 
 
-/*INICIO HOME BOX*/
-.box{
+/*INICIO HOME2*/
+.home2{
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -230,7 +231,7 @@ li a:hover {
     line-height: 1.5;
     
 }
-.box h2{
+.home2 h2{
     width: 100%;
     text-align: center;
     margin: 20px 35px;
@@ -238,48 +239,48 @@ li a:hover {
     font-size: 26px;
     font-style: oblique;
 }
-.box p{
+.home2 p{
     margin: 15px 35px;
     font-size: 16px;
     text-align: justify;
 }
 @media (max-width: 720px){
-    .box{
+    .home2{
         margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    .box h2{
+    .home2 h2{
         font-size: 20px;
         width: 100%;
         margin: 15px 15px;
     }
-    .box p{
+    .home2 p{
         font-size: 14px;
         margin: 15px 15px;
     }
 }
 @media (max-width: 450px){
-    .box {
+    .home2 {
         margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    .box h2{
+    .home2 h2{
         font-size: 18px;
         width: 100%;
         margin: 15px 15px;
     }
-    .box p{
+    .home2 p{
         font-size: 13px;
         margin: 15px 15px;
     }
 }
-/*FIN HOME BOX*/
+/*FIN HOME2*/
 
 
-/*INICIO HOME TEXTO2*/
-#texto2{
+/*INICIO HOME CONTAINER-PRODUCTOS*/
+#container-productos{
     display: flex;
     background-color: grey;
     margin: auto;
@@ -287,7 +288,7 @@ li a:hover {
     color: #EAEBEC;
     padding: 10px;
 }
-#texto2 h2{
+#container-productos h2{
     flex: 20%;
     font-size: 30px;
     font-style: oblique;
@@ -295,10 +296,9 @@ li a:hover {
     margin: auto;
 }
 .productosVariedad {
-    flex: 65%;
+    flex: 70%;
     display:flex; 
     flex-wrap: wrap;
-    text-align: left;
     font-size: 16px;
     padding: 15px;
     margin: auto;
@@ -317,7 +317,6 @@ li a:hover {
         font-size: 14px;
     }
 }
-
 @media (max-width: 821px){
     .productosVariedad p2{
         font-size: 0px;
@@ -344,7 +343,7 @@ li a:hover {
         flex: 50%;
 }
 }
-/*FIN HOME TEXTO2*/
+/*FIN HOME CONTAINER-PRODUCTOS*/
 
 
 #texto3{
@@ -365,18 +364,19 @@ li a:hover {
     font-style: normal;
 }
 
-/*INICIO GALERIA - TEXTO4*/
-#texto4{
+/*INICIO GALERIA*/
+#galeria{
     display: flex;
     background-color: grey;
     margin: auto;
+    margin-top: 0px;
     text-align: center;
     color: #EAEBEC;
     padding: 10px;
 }
-#texto4 h2{
+#galeria h2{
     flex: 15%;
-    font-size: 40px;
+    font-size: 30px;
     font-style: oblique;
     color: yellow;
     margin: auto;
@@ -385,52 +385,67 @@ li a:hover {
     flex: 70%;
     display:flex; 
     flex-wrap: wrap;
-    text-align: left;
     font-size: 16px;
     padding: 15px;
     margin: auto;
 }
 .envioGratis p1{
-    flex: 16%;
+    flex: 20%;
+    text-align: right;
 }
 .envioGratis p2{
     flex: 60%;
+    text-align: left;
+    margin-left: 10px;
 }
-.envioGratis p3{
-    flex: 24%;
-    font-size: 12px;
+@media screen and (max-width: 1050px){
+    .envioGratis p1{
+        flex: 10%;
+        text-align: right;
+    }
+    .envioGratis p2{
+        display: none;
+    }
 }
 @media screen and (max-width: 720px){
+    .envioGratis {
+        flex: 0%;
+        margin: 0;
+        padding: 0;
+        font-size: 0px;
+    }
     .envioGratis p1{
-        flex: 20%;
-        font-size: 16px;
+        display: none;
+        font-size: 0px;
+        margin: 0;
+        padding: 0;
+    }
+    .envioGratis p2{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    #galeria h2{
+        flex: 100%;
+        width: 100;
+        font-size: 20px;
         text-align: center;
     }
-    .envioGratis p2{
-        flex: 80%;
-        font-size: 16px;
-        text-align: left;
-    }
-    .envioGratis p3{
-        flex: 0%;
-        font-size: 0px;
-    }   
 }
-@media screen and (min-width: 721px){
+@media screen and (max-width: 450px){
     .envioGratis p1{
-        flex: 16%;
-        font-size: 20px;
+        display: none;
     }
     .envioGratis p2{
-        flex: 60%;
-        font-size: 18px;
+        display: none;
     }
-    .envioGratis p3{
-        flex:24%;
-        font-size: 14px;
-    }   
+    #texto4 h2{
+        flex: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
 }
-/*FIN GALERIA - TEXTO4*/
+/*FIN GALERIA*/
 
 
 
@@ -502,36 +517,36 @@ li a:hover {
 .contenedor-productos {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 5px;
 }
 .contenedor-productos .imagen {
-    width: 34%;
+    width: 90%;
     position: relative;
     height: 250px;
-    
     margin: 30px 0px;
-    box-shadow: 0px 0px 3px rgba(42, 40, 40, 0.75);
+    box-shadow: 0px 0px 3px rgba(32, 31, 31, 0.881);
 }
 .imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
 }
 .overley {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #0d0d0e46;
+    background: #0d0d0e8a;
     width: 100%;
     height: 0;
     overflow: hidden;
     transition: .5s ease;
 }
 .overley h2 {
-    color: white;
+    color: yellow;
     font-weight: 300;
     font-size: 30px;
     position: absolute;
@@ -539,6 +554,12 @@ li a:hover {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    font-family: 'Michroma', sans-serif;
+}
+.overley h2 a {
+    text-decoration: none;
+    list-style: none;
+    color: yellow;
 }
 .imagen:hover .overley {
     height: 100%;
@@ -647,7 +668,7 @@ li a:hover {
 
 
 
-/*INICIO GALERIA*/
+/*INICIO TITTLE-GALERRY*/
 .titleGalerry{
     text-align: center;
     font-family: 'Michroma', sans-serif;
@@ -662,8 +683,8 @@ li a:hover {
 .gallery-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 30px;
-    grid-gap: 10px;
+    column-gap: 1.2rem;
+    row-gap: 1.2rem;
 }
 .gallery__item {
     position: relative;
@@ -674,28 +695,28 @@ li a:hover {
     border-radius: 5px;
 }
 .gallery__img:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     filter: none;
 }
 @media (min-width:200px) {
     .gallery-container {
         grid-template-columns: repeat(1, 1fr);
-        width: 90%;
+        width: 100%;
         margin: auto;
+        padding: 15px;
     }
 }
-@media (min-width:500px) {
+@media (min-width:350px) {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        margin: auto;  
+        width: 100%;
+        margin: auto;
+        padding: 15px;  
     }
 }
-@media (min-width:750px) {
-    .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
-        width: 90%;
-        margin: auto;  
+@media screen and (max-width: 720px){
+    .titleGalerry{
+        font-size: 20px;
     }
 }
 @media (min-width:950px) {
@@ -705,20 +726,13 @@ li a:hover {
         margin: auto;
     }
 }
-@media (min-width:1150px) {
-    .gallery-container {
-        grid-template-columns: repeat(5, 1fr);
-        width: 90%;
-        margin: auto;
-    }
-}
-/*FIN GALERIA*/
+/*FIN TITTLE-GALERRY*/
 
 
 
 
-/*INICIO RELLENO*/
-.relleno{
+/*INICIO TEXTO-PRODUCTOS*/
+.texto-productos{
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.144);
@@ -731,57 +745,57 @@ li a:hover {
     word-spacing: 0.3vw;
     line-height: 1.5;
 }
-.relleno h2{
+.texto-productos h2{
     width: 100%;
     text-align: center;
     margin: 20px 35px 20 30px;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 24px;
     font-style: oblique;
 }
-.relleno span{
+.texto-productos span{
     color: yellow;
 }
-.relleno p{
+.texto-productos p{
     margin: 15px 35px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
 }
 @media (max-width: 720px){
-    .relleno{
+    .texto-productos{
         margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    .relleno h2{
+    .texto-productos h2{
         font-size: 20px;
         width: 100%;
         margin: 15px 15px;
     }
-    .relleno p{
+    .texto-productos p{
         font-size: 14px;
         margin: 15px 15px;
     }
 }
 @media (max-width: 450px){
-    .relleno {
+    .texto-productos {
         margin-top: 10px;
         word-spacing: 0.5vw;
         line-height: 1.4;
     }
-    .relleno h2{
+    .texto-productos h2{
         font-size: 18px;
         width: 100%;
         margin: 15px 15px;
         margin-bottom: 5px;
     }
-    .relleno p{
+    .texto-productos p{
         font-size: 13px;
         margin: 15px 15px;
         margin-top: 5px;
     }
 }
-/*FIN RELLENO*/
+/*FIN TEXTO-PRODUCTOS*/
 
 
 
@@ -857,13 +871,12 @@ li a:hover {
 }
 .box2 p{
     margin: 20px 30px;
-    text-transform: none;
+    text-decoration:none;
 }
-.box2 p span{
-    text-decoration-line: underline;
-}
-.box2 p span:hover {
+.box2 p span a{
     color: yellow;
+    list-style-type: none;
+    text-decoration:none;
 }
 @media (max-width: 577px){
     .box1{
